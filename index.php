@@ -10,6 +10,14 @@ include __DIR__ . '/partials/db.php';
     <title>Php-Ajax-Dischi</title>
 </head>
 <body>
-    
+    <h1>Dischi</h1>
+    <?php foreach($database as $dato) {?>
+    <ul>
+        <li><?php echo $dato['title'] ?></li>
+        <li><?php echo $dato['author'] ?></li>
+        <li><?php echo $dato['year'] ?></li>
+        <li><?php echo $dato['poster'] ?></li>
+    </ul>
+    <?php } ?>
 </body>
 </html>
