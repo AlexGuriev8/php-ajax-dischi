@@ -1,0 +1,13 @@
+header {
+  height: $headerHeight;
+  background-color: $backgroundDark;
+
+  .#{&}-container {
+    @include container;
+  }
+
+  img {
+    height: $heightLogo;
+    margin-top: 10px;
+  }
+}

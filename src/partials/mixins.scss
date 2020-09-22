@@ -1,0 +1,18 @@
+@mixin flex($justify,$align,$wrap:wrap,$direction:row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+};
+
+@mixin flexBasis($margin:$marginCard){
+  flex-basis: calc(100% / 3 - #{$margin} * 2 );
+  margin: $margin;
+}
+
+@mixin container(){
+  width: $containerWidth;
+  margin: 0 auto;
+  height: 100%;
+}

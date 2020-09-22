@@ -1,0 +1,29 @@
+.cds-container {
+  @include flex(center,center);
+  .cd {
+    @include flexBasis;
+    padding: 30px;
+    background: $backgroundDark;
+    color: $colorWhite;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #000;
+      cursor: pointer;
+    }
+
+    img {
+      margin-bottom: 20px;
+      max-width: 80%;
+    }
+
+    small {
+      display: block;
+      margin: 10px 0;
+      color: lightgrey;
+    }
+
+  }
+}
